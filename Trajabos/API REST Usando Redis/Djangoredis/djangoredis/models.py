@@ -8,4 +8,4 @@ class Student(models.Model):
     nivel = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.codigo + ' ' + self.nombre
+        return str(self.codigo) + ' ' + self.nombre

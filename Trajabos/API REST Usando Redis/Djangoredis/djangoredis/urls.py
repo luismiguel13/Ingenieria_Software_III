@@ -19,5 +19,6 @@ from djangoredis import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('students/', views.student_list)
+    path('students/', views.student_list),
+    path('students/<int:codigo>/', views.student_detail)
 ]
