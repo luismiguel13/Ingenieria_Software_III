@@ -7,7 +7,7 @@ redis = Redis(hots='redis', port=6379)
 
 def hello():
     redis.incr('hits')
-    counter = str(refis.get('hits'), 'utf-8')
+    counter = str(redis.get('hits'), 'utf-8')
     return counter
 
 if __name__ == '__main__':
