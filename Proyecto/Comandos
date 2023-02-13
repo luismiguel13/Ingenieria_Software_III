@@ -1,0 +1,33 @@
+Comandos
+
+Instalar mariadb:
+
+sudo apt update
+sudo apt install mariadb-server
+sudo systemctl status mariadb
+
+Crear usuario mariadb:
+
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+
+
+Instalar entonrno virtual:
+virtualenv -p python3 env
+
+Activar el entorno virtual:
+source env/bin/activate
+
+Actualizar pip:
+pip install --upgrade setuptools
+python -m pip install --upgrade pip
+
+Instalar flask:
+pip install flask flask_mysql
+
+Ejecutar app:
+python ./src/app.py
+
+
+
+
+
