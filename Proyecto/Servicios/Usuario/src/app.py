@@ -11,7 +11,6 @@ app.config['MYSQL_DATABASE_USER'] = 'root' #depende del usuario que asignaron en
 app.config['MYSQL_DATABASE_PASSWORD'] = '1234' #depende de la contraseña que asignaron en heidiSQL
 app.config['MYSQL_DATABASE_DB'] = 'U_CommerceBD'
 
-
 mysql = MySQL()
 
 @app.route('/usuarios', methods=['GET'])
@@ -52,5 +51,5 @@ def registrar_usuario():
         return jsonify({'Mensaje':'Error'})
 
 if __name__ == '__main__':
-    app.config.from_object(config['development'])
+    #app.config.from_object(config['development'])
     app.run()
