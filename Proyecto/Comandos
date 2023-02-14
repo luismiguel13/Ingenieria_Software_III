@@ -2,8 +2,10 @@ Comandos
 
 Instalar mariadb:
 sudo apt update
-sudo apt install mariadb-server
-sudo systemctl status mariadb
+sudo apt install -y mariadb-server
+sudo apt install -y mariadb-client
+sudo mysql
+alter user root@localhost identified by '1234';
 
 Instalar entonrno virtual:
 virtualenv -p python3 env
