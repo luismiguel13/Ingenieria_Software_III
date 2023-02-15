@@ -1,5 +1,4 @@
 from flask import Flask, jsonify, request
-from config import config
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
@@ -51,5 +50,4 @@ def registrar_usuario():
         return jsonify({'Mensaje':'Error'})
 
 if __name__ == '__main__':
-    #app.config.from_object(config['development'])
     app.run()
